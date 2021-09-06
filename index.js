@@ -25,20 +25,20 @@ $(document).ready(function () {
 		$menuIcon.removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove active');
 		$modalBackdropDiv.css('z-index', 900);
 		$body.append($modalBackdropDiv);
-		if (!$navbar.hasClass('menu-fixed')) {
-			$navbar.css('background-color', 'rgba(255,254,253,0.97)');
+		if (!$navbar.hasClass('menu-fixed')) { 
+			$navbar.css('background-color', 'rgba(255,254,253,0.97)'); 
 		}
 		// Cerra menu al hacer click en el modal
-		$modalBackdropDiv.on('click', function () {
-			$('.navbar-toggle').click();
-			closeMenu();
+		$modalBackdropDiv.on('click', function () { 
+			$('.navbar-toggle').click(); 
+			closeMenu(); 
 		});
 	}
 	function closeMenu() {
-		$menuIcon.removeClass('glyphicon-remove active').addClass('glyphicon-menu-hamburger');
-		$modalBackdropDiv.css('z-index', 1025).remove();
-		if (!$navbar.hasClass('menu-fixed')) {
-			$navbar.css('background-color', 'transparent');
+		$menuIcon.removeClass('glyphicon-remove active').addClass('glyphicon-menu-hamburger'); 
+		$modalBackdropDiv.css('z-index', 1025).remove(); 
+		if (!$navbar.hasClass('menu-fixed')) { 
+			$navbar.css('background-color', 'transparent'); 
 		}
 	}
 	// Icono de menu mobile
