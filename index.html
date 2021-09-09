@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,245 +13,222 @@
     <script src="https://kit.fontawesome.com/cd9955ac07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio • Yanina Andregnette</title>
+      <!-- Archivo JS interno -->
+    <script defer src="index.js"></script>
+    <link rel="icon" href="media/logo.png">
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" data-offset="60">
-    <!-- Navbar -->
-    <nav id="main-nav" class="navbar navbar-default menu-fixed">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <!-- Menu Toggle -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="glyphicon glyphicon-menu-hamburger"></span>
-            </button>
-            <a class="navbar-brand scroll" href="#top"><img class="pull-left logo" src="media/logo.png" alt="Logo"><span>Yanina Andregnette</span></a>
-          </div>
-          <!-- Menu desplegable -->
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a class="scroll" href="#top">Inicio <span class="sr-only">(current)</span></a></li>
-              <li><a class="scroll" href="#about">Sobre mi</a></li>
-              <li><a class="scroll" href="#portfolio">Portfolio</a></li>
-              <li><a class="scroll" href="#redes">Mis redes</a></li>
-              <li><button class="btn td-btn small outline pink" data-toggle="modal" data-target="#contactModal">Contacto</button></li>
-            </ul>
-          </div><!-- navbar-collapse -->
-        </div><!-- container-fluid -->
-      </nav>
-    <!-- Fin Navbar -->
-    <!-- Header -->
-    <header id="top" class="encabezado">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3">
-                    <img class="img-responsive center-block logo" src="media/logo.png" alt="Logo">
-                </div>
-                <div class="col-xs-12">
-                    <h1 class="title">Hola! Soy Yann.</h1>
-                    <p>Me gusta diseñar y desarrollar sitios vistosos y amigables para el usuario.</p>
-                    <a class="btn td-btn outline green scroll mt-30" href="#content" title="Learn more about me!"><span
-                            class="glyphicon glyphicon-triangle-bottom"></span> Mas info</a>
-                </div>
-            </div>
+    <!-- Fixed Navbar -->
+    <nav id="main-nav" class="navbar navbar-default ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- Menu Toggle -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <a class="navbar-brand scroll" href="#top"><img class="pull-left logo" src="media/logo.png" alt="Logo"><span>Yanina Andregnette</span></a>
         </div>
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a class="scroll" href="#top">Inicio <span class="sr-only">(current)</span></a></li>
+            <li><a class="scroll" href="#about">Sobre mi</a></li>
+            <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="scroll" href="#follow-me">Mis redes</a></li>
+            <li><button class="btn td-btn small outline pink" data-toggle="modal" data-target="#contactModal">Contacto</button></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Jumbotron -->
+    <header id="top" class="jumbotron">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3">
+            <img class="img-responsive center-block logo" src="media/logo.png" alt="Logo">
+          </div>
+          <div class="col-xs-12">
+            <h1 class="title">Hola! Soy Yann.</h1>
+            <p>Me gusta diseñar y desarrollar sitios vistosos y amigables para el usuario.</p>
+            <a class="btn td-btn outline green scroll mt-30" href="#content" title="Learn more about me!"><span class="glyphicon glyphicon-triangle-bottom"></span> Mas info</a>
+          </div>
+        </div>
+      </div>
     </header>
-    <!-- Fin Header -->
-    <!-- Inicio contenido principal -->
+    <!-- Main Content Begins -->
     <div id="content" class="container-fluid text-center">
-        <!-- Sobre mi -->
-        <section id="about" class="row bg-white bg-shadow">
+      <!-- About Me Section -->
+      <section id="about" class="row bg-white bg-shadow">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="mb-30">Sobre mi</h1>
+          </div>
+        </div>
+        <div class="row mb-30">
+          <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
+            <img class="img-responsive center-block profile mb-30" src="https://i.ibb.co/MRPL8WS/183360468-3030797137150820-1212046279066377534-n.jpg" alt="Profile Photo">
+          </div>
+          <div class="col-sm-8 col-sm-offset-2 col-md-7 col-md-offset-0 col-lg-6 text-left">
+            <h4>Hola! Soy desarrolladora Front End y aspirante a diseñadora Ux/Ui.</h4>
+            <p>Después de haber pasado gran parte de mi vida en el mundo de los recursos humanos,
+                finalmente encontré mi pasión en el camino del diseño y la tecnología.
+                Comencé estudiando Fotografía profesional y continué mi camino hacia el desarrollo web y
+                lenguajes de programación.
+                La lección que más se destacó a lo largo de este viaje fue la importancia del usuario final. Ya
+                sea un producto físico o digital, su propósito debe ser obvio y el producto en sí debe ser fácil
+                de usar. Así que no importa en qué esté trabajando, siempre tengo al usuario en mente y hago
+                todo lo posible para crear una experiencia agradable para él.</p>
+            <p>Actualmente, dedico la mayor parte de mi tiempo a diseñar sitios web y ayudo en el aprendizaje de
+                nuevos
+                estudiantes de Desarrollo Web y Dieño UX/UI como tutora en <a href="https://www.coderhouse.com/"
+                    target="_blank">Coder House</a>.
+                Cuando tengo tiempo libre, me vas a encontrar obsesionándome con mis bandas, películas y series
+                favoritas o jugando video juegos.
+                Si queres saber más sobre mi <a class="scroll" href="#follow-me">seguime en mis redes!</a> :)</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+          <hr class="dashed">
+            <h2 class="mb-60">Lo que hago</h2>
+          </div>
+          <div class="col-sm-3 col-lg-2 col-lg-offset-2">
+            <img class="img-responsive center-block icon" src="media/responsive.png" alt="Responsive Web Design Icon">
+            <p>Diseño web responsivo</p>
+          </div>
+          <div class="col-sm-3 col-lg-2">
+            <img class="img-responsive center-block icon" src="media/web-design.png" alt="UI/UX Design Icon">
+            <p>Diseño UX/UI</p>
+          </div>
+          <div class="col-sm-3 col-lg-2">
+            <img class="img-responsive center-block icon" src="media/web-development.png" alt="Development Icon">
+            <p>Desarrollo</p>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-30">
+            <img class="img-responsive center-block icon" src="media/brand-identity.png" alt="Identity and Branding Icon">
+            <p>Identidad de marca</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn td-btn outline green mt-30" data-toggle="modal" data-target="#resumeModal">Mi CV</button>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="row bg-star-y">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="mb-60">Portfolio</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div id="projects" class="carousel slide col-xs-12" data-ride="carousel" data-interval="false">
             <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="mb-30">Sobre mi</h2>
-                </div>
-            </div>
-            <div class="row mb-30">
-                <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
-                    <img class="img-responsive center-block profile mb-30"
-                        src="https://i.ibb.co/MRPL8WS/183360468-3030797137150820-1212046279066377534-n.jpg"
-                        alt="Foto de perfil">
-                </div>
-                <div class="col-sm-8 col-sm-offset-2 col-md-7 col-md-offset-0 col-lg-6 text-left">
-                    <h4>Hola! Soy desarrolladora Front End y aspirante a diseñadora Ux/Ui.</h4>
-                    <p>Después de haber pasado gran parte de mi vida en el mundo de los recursos humanos,
-                        finalmente encontré mi pasión en el camino del diseño y la tecnología.
-                        Comencé estudiando Fotografía profesional y continué mi camino hacia el desarrollo web y
-                        lenguajes de programación.
-                        La lección que más se destacó a lo largo de este viaje fue la importancia del usuario final. Ya
-                        sea un producto físico o digital, su propósito debe ser obvio y el producto en sí debe ser fácil
-                        de usar. Así que no importa en qué esté trabajando, siempre tengo al usuario en mente y hago
-                        todo lo posible para crear una experiencia agradable para él.</p>
-                    <p>Actualmente, dedico la mayor parte de mi tiempo a diseñar sitios web y ayudo en el aprendizaje de
-                        nuevos
-                        estudiantes de desarrollo web como tutora en <a href="https://www.coderhouse.com/"
-                            target="_blank">Coder House</a>.
-                        Cuando tengo tiempo libre, me vas a encontrar obsesionándome con mis bandas, películas y series
-                        favoritas o jugando video juegos.
-                        Si queres saber más sobre mi <a class="scroll" href="#follow-me">seguime en mis redes!</a> :)
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <hr class="dashed">
-                    <h2 class="mb-60">Lo que hago</h2>
-                </div>
-                <div class="col-sm-3 col-lg-2 col-lg-offset-2">
-                    <img class="img-responsive center-block icon" src="media/responsive.png"
-                        alt="Responsive Web Design Icon">
-                    <p>Diseño web responsivo</p>
-                </div>
-                <div class="col-sm-3 col-lg-2">
-                    <img class="img-responsive center-block icon" src="media/web-design.png" alt="UI/UX Design Icon">
-                    <p>Diseño UX/UI</p>
-                </div>
-                <div class="col-sm-3 col-lg-2">
-                    <img class="img-responsive center-block icon" src="media/web-development.png"
-                        alt="Development Icon">
-                    <p>Desarrollo</p>
-                </div>
-                <div class="col-sm-3 col-lg-2 mb-30">
-                    <img class="img-responsive center-block icon" src="media/brand-identity.png"
-                        alt="Identity and Branding Icon">
-                    <p>Identidad de marca</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <button class="btn td-btn outline green mt-30" data-toggle="modal" data-target="#resumeModal">Mi
-                        CV</button>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio -->
-        <section id="portfolio" class="row bg-portfolio">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="mb-60">Portfolio</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div id="projects" class="carousel slide col-xs-12" data-ride="carousel" data-interval="false">
-                    <div class="row">
-                        <!-- Carrusel boton prev -->
-                        <div class="col-xs-1">
-                            <a class="left carousel-control" href="#projects" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Anterior</span>
-                            </a>
-                        </div>
-                        <div class="col-xs-10">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="col-sm-7">
-                                        <img class="img-responsive center-block mb-30" src="media/omega-desk.png"
-                                            alt="Omega E-Sports">
-                                    </div>
-                                    <div class="col-sm-5">
-                                        <div class="carousel-caption card">
-                                            <h3>Omega E-Sports</h3>
-                                            <h4>Sitio web responsivo</h4>
-                                            <button class="btn td-btn small outline green" data-toggle="modal"
-                                                data-target="#tributeModal">Ver detalles</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <div class="col-sm-7">
-                                        <img class="img-responsive center-block mb-30" src="media/tienda-desktop.png"
-                                            alt="Tienda Gamer">
-                                    </div>
-                                    <div class="col-sm-5">
-                                        <div class="carousel-caption card">
-                                            <h3>Tienda Gamer</h3>
-                                            <h4>App React JS</h4>
-                                            <button class="btn td-btn small outline green" data-toggle="modal"
-                                                data-target="#tmsModal">Ver detalles</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-sm-7">
-                                        <img class="img-responsive center-block mb-30" src="media/kotzen-desktop.png"
-                                            alt="Kotzen">
-                                    </div>
-                                    <div class="col-sm-5">
-                                        <div class="carousel-caption card">
-                                            <h3>Kotzen</h3>
-                                            <h4>Sitio web responsivo</h4>
-                                            <button class="btn td-btn small outline green" data-toggle="modal"
-                                                data-target="#rbModal">Ver detalles</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Fin item -->
-                            </div>
-                            <!-- carousel-inner -->
-                        </div>
-                        <div class="col-xs-1">
-                            <!-- Carrusel boton next -->
-                            <a class="right carousel-control" href="#projects" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!-- Fin carrusel boton next -->
-                        <div class="col-xs-12">
-                            <!-- Indicadores -->
-                            <ol class="carousel-indicators mt-30">
-                                <li data-target="#projects" data-slide-to="0" class="active"></li>
-                                <li data-target="#projects" data-slide-to="1"></li>
-                                <li data-target="#projects" data-slide-to="2"></li>
-                            </ol>
-                        </div><!-- col -->
-                    </div><!-- row -->
-                </div><!-- projects -->
-            </div><!-- row -->
-        </section>
-        <!-- Seccion Contacto -->
-        <section class="row bg-pink bg-shadow">
-            <div class="col-xs-12">
-                <h2 class="mb-30">Te gusta lo que ves?</h2>
-                <button class="btn btn-default td-btn outline white" data-toggle="modal"
-                    data-target="#contactModal">Contactame!</button>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer id="redes" class="row text-left bg-footer">
-           
-            <div id="follow-me" class="col-xs-12 col-sm-5 col-sm-offset-1 mb-30">
-                <h3>Mis redes!</h3>
-                <a class="social" href="https://www.linkedin.com/in/andregnette-yanina/" target="_blank"
-                    title="LinkedIn">
-                    <i class="fab fa-linkedin-in" style="color: #6b7a78"></i>
+              <!-- Carousel Prev Button -->
+              <div class="col-xs-1">
+                <a class="left carousel-control" href="#projects" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
                 </a>
-                <a class="social" href="https://twitter.com/yanneviltwin/" target="_blank" title="Twitter">
-                    <i class="fab fa-twitter" style="color: #6b7a78"></i>
+              </div>
+              <div class="col-xs-10">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <div class="col-sm-7">
+                      <img class="img-responsive center-block mb-30" src="media/omega-desk.png" alt="Proyecto Omega eSports">
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="carousel-caption card">
+                        <h3>Proyecto Omega eSports</h3>
+                        <h4>Sitio web responsivo</h4>
+                        <button class="btn td-btn small outline green" data-toggle="modal" data-target="#tributeModal">Ver detalles</button>
+                      </div>
+                    </div>
+                  </div><!-- /.item -->
+                  <div class="item">
+                    <div class="col-sm-7">
+                      <img class="img-responsive center-block mb-30" src="media/tienda-desktop.png" alt="Proyecto Tienda Gamer">
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="carousel-caption card">
+                        <h3>Proyecto Tienda Gamer</h3>
+                        <h4>App React JS</h4>
+                        <button class="btn td-btn small outline green" data-toggle="modal" data-target="#tmsModal">Ver detalles</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-sm-7">
+                      <img class="img-responsive center-block mb-30" src="media/kotzen-desktop.png" alt="Proyecto Kotzen">
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="carousel-caption card">
+                        <h3>Proyecto Kotzen</h3>
+                        <h4>Sitio web responsivo</h4>
+                        <button class="btn td-btn small outline green" data-toggle="modal" data-target="#rbModal">Ver detalles</button>
+                      </div>
+                    </div>
+                  </div><!-- /.item -->
+                </div><!-- /.carousel-inner -->
+              </div>
+              <div class="col-xs-1">
+                <!-- Carousel Next Button -->
+                <a class="right carousel-control" href="#projects" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
                 </a>
-                <a class="social" href="https://www.instagram.com/yanneviltwin/?hl=es-la" target="_blank"
-                    title="Instagram">
-                    <i class="fab fa-instagram" style="color: #6b7a78"></i>
-                </a>
-                <a class="social" href="https://github.com/yanneviltwin/" target="_blank" title="Github">
-                    <i class="fab fa-github" style="color: #6b7a78"></i>
-                </a>
-            </div>
-            <div class="col-xs-12 text-center">
-                <hr class="dashed">
-                <h2>&ndash; Gracias por tu visita! &ndash;</h2>
-                <small class="copy">Copyright &copy; <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                    </script> Yanina Andregnette &mdash; Todos los derechos reservados &mdash;
-                    <span class="glyphicon" aria-hidden="true"></span>
-                </small>
-            </div>
-        </footer>
+              </div><!-- / Next Btn -->
+              <div class="col-xs-12">
+                <!-- Indicators -->
+                <ol class="carousel-indicators mt-30">
+                  <li data-target="#projects" data-slide-to="0" class="active"></li>
+                  <li data-target="#projects" data-slide-to="1"></li>
+                  <li data-target="#projects" data-slide-to="2"></li>
+                </ol>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /#projects -->
+        </div><!-- /.row -->
+      </section>
+      <!-- Contact Me Section -->
+      <section class="row bg-pink bg-shadow">
+        <div class="col-xs-12">
+          <h1 class="mb-30">Te gusta lo que ves?</h1>
+          <button class="btn btn-default td-btn outline white" data-toggle="modal" data-target="#contactModal">Contactame!</button>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="row text-left bg-honeycomb">
+       
+        <div id="follow-me" class="col-xs-12 col-sm-5 col-sm-offset-1 mb-30">
+          <h3>Mis redes!</h3>
+          <a class="social" href="https://www.linkedin.com/in/andregnette-yanina/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin-in" style="color: #6b7a78"></i>
+          </a>
+          <a class="social" href="https://twitter.com/yanneviltwin/" target="_blank" title="Twitter">
+            <i class="fab fa-twitter" style="color: #6b7a78"></i>
+          </a>
+          <a class="social" href="https://www.instagram.com/yanneviltwin/?hl=es-la" target="_blank"
+          title="Instagram">
+          <i class="fab fa-instagram" style="color: #6b7a78"></i>
+        </a>
+        <a class="social" href="https://github.com/yanneviltwin/" target="_blank" title="Github">
+            <i class="fab fa-github" style="color: #6b7a78"></i>
+        </a>
+        </div>
+        <div class="col-xs-12 text-center">
+          <hr class="dashed">
+          <h2>&ndash; Gracias por tu visita! &ndash;</h2>
+          <small class="gray">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Yanina Andregnette &mdash; Todos los derechos reservados &mdash; </span></small>
+        </div>
+      </footer>
     </div>
-
-    <!-- CV Modal -->
-    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeTitle">
+  
+     <!-- CV Modal -->
+     <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeTitle">
         <div class="modal-dialog wide" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -270,7 +247,7 @@
                             <p class="year">Jun/2021 - Presente</p>
                         </div>
                         <div class="col-md-9 col-lg-8">
-                            <h4>Tutora de Desarrollo Web</h4>
+                            <h4>Tutora de Desarrollo Web y Diseño UX/UI</h4>
                             <p class="mb-0"><strong>Coder House</strong></p>
                             <hr>
                             <p class="mb-0"><strong>Tareas</strong></p>
@@ -329,7 +306,7 @@
                                     <p class="mb-0"><strong>Formación autodidacta</strong></p>
                                     <p>Udemy</p>
                                     <p>• Introducción a la programación con Javascript (Grover Vásquez)</p>
-                                    <p>• React: De cero a experto (Fernando Herrara)</p>
+                                    <p>• React: De cero a experto (Fernando Herrera)</p>
                                     <p>• React JS (Pablo Monteserín)</p>
                                     <p>• Curso de HTML, CSS y BOOTSTRAP (Ignacio Bluuweb)</p>
                                 </div>
@@ -368,8 +345,9 @@
         </div><!-- modal-dialog -->
     </div><!-- modal -->
 
-    <!-- Proyecto Omega Esports modal-->
-    <div class="modal fade" id="tributeModal" tabindex="-1" role="dialog" aria-labelledby="tributeTitle">
+  
+     <!-- Proyecto Omega Esports modal-->
+     <div class="modal fade" id="tributeModal" tabindex="-1" role="dialog" aria-labelledby="tributeTitle">
         <div class="modal-dialog wide" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -420,8 +398,7 @@
                         </div>
                     </div><!-- row -->
                     <div class="modal-footer center">
-                        <button type="button" class="btn td-btn outline small" data-dismiss="modal">Cerrar
-                            proyecto</button>
+                        <button type="button" class="btn td-btn outline small" data-dismiss="modal">Cerrar</button>
                     </div><!-- modal-footer -->
                 </div><!-- modal-body -->
             </div><!-- modal-content -->
@@ -558,7 +535,7 @@
             </div><!-- modal-content -->
         </div><!-- modal-dialog -->
     </div><!-- modal -->
-
+  
     <!-- Contact Modal -->
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactTitle">
         <div class="modal-dialog" role="document">
@@ -610,7 +587,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
-    <script src="index.js"></script>
 </body>
 
 </html>
