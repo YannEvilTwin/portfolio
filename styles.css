@@ -310,6 +310,33 @@ footer.row {
   -webkit-filter: brightness(10);
   filter: brightness(10);
 }
+.fb-share-button {
+  background-color: #C6375D;
+  color: #fffefd;
+  text-decoration: none;
+  margin-left: 35%;
+  margin-top: 3%;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+
+}
+.fb-share-button a {
+  color: #fffefd;
+}
+
+.twitter-share-button {
+  background-color: #C6375D;
+  margin-top: 3%;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.twitter-share-button a {
+  color: #fffefd;
+}
+.twitter-share-button i {
+  color: #fffefd;
+}
 
 /* Iconos redes */
 
@@ -509,6 +536,13 @@ footer.row {
     max-width: 480px;
     width: 100%;
   }
+
+.fb-share-button {
+ position: absolute;
+ 
+}
+
+  
 }
 @media (max-width: 767px) {
   /* Elementos de la página */
@@ -559,6 +593,13 @@ footer.row {
   #projects .card {
     text-align: center;
   }
+  .fb-share-button {
+    margin-top: 15px;
+  }
+  .twitter-share-button {
+    margin-top: 15px;
+  }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -573,4 +614,7 @@ footer.row {
       font-size: 0.8em;
       margin-left: 40px;
   }
+ 
+
+
   }

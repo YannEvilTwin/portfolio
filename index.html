@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph tags to customize link previews. -->
+    <meta property="og:url" content="https://yanneviltwin.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="Portfolio Yanina Andregnette" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,6 +24,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" data-offset="60">
+
     <!-- Fixed Navbar -->
     <nav id="main-nav" class="navbar navbar-default ">
         <div class="container-fluid">
@@ -241,6 +247,17 @@
                     <i class="fab fa-github" style="color: #6b7a78"></i>
                 </a>
             </div>
+            <!--- Boton para compartir en FB -->
+            <div class="fb-share-button btn btn-default td-btn outline small"
+                data-href="https://yanneviltwin.github.io/portfolio/" data-layout="button" data-size="small"><i
+                    class="fab fa-facebook-square"></i> <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyanneviltwin.github.io%2Fportfolio%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Share!</a></div>
+            <!--- Boton para compartir en Twitter -->
+            <div class="twitter-share-button btn btn-default td-btn outline small pink">
+                <i class="fab fa-twitter"></i> <a class="twitter-share-button"
+                    href="https://twitter.com/intent/tweet?url=https://yanneviltwin.github.io/portfolio/"
+                    data-size="large"> Tweet!</a></div>
             <div class="col-xs-12 text-center">
                 <hr class="dashed">
                 <h2>&ndash; Gracias por tu visita! &ndash;</h2>
@@ -416,8 +433,8 @@
                                 <span class="label tag">Google Fonts</span>
                             </p>
                             <a class="btn td-btn outline green mb-30" href="https://yanneviltwin.github.io/proyecto-1/"
-                                target="_blank" title="Omega eSports"><span
-                                    class="glyphicon glyphicon-link"></span> Visita el sitio</a>
+                                target="_blank" title="Omega eSports"><span class="glyphicon glyphicon-link"></span>
+                                Visita el sitio</a>
 
                         </div>
                     </div><!-- row -->
@@ -483,8 +500,8 @@
                                 <span class="label tag">Google Fonts</span>
                             </p>
                             <a class="btn td-btn outline green mb-30" href="https://e-commerce-yanina-a.herokuapp.com/"
-                                target="_blank" title="Tienda Gamer"><span
-                                    class="glyphicon glyphicon-link"></span> Visita el sitio</a>
+                                target="_blank" title="Tienda Gamer"><span class="glyphicon glyphicon-link"></span>
+                                Visita el sitio</a>
                         </div>
                     </div><!-- row -->
                     <div class="modal-footer center">
@@ -611,6 +628,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+
+    <!-- Compartir en Facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v11.0"
+        nonce="tYdMiY6x"></script>
 </body>
 
 </html>
