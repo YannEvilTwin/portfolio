@@ -270,7 +270,7 @@ footer.row {
 }
 .outline.green:focus,
 .outline.green:hover {
-  background-color: #df3778;
+  background-color: #C6375D;
   color: #fffefd;
 }
 .outline.white {
@@ -280,19 +280,19 @@ footer.row {
 .outline.white:focus,
 .outline.white:hover {
   background-color: #fffefd;
-  color: #df3778;
+  color: #C6375D;
 }
 /* Boton contacto navbar */
 
 .navbar-nav .outline.pink {
-  border-color: #df3778;
-  color: #df3778;
+  border-color: #C6375D;
+  color: #C6375D;
   margin: 20px 15px 0;
   padding-top: 0;
 }
 .navbar-nav .outline.pink:focus,
 .navbar-nav .outline.pink:hover {
-  background-color: #df3778;
+  background-color: #C6375D;
   color: #fffefd;
   text-decoration: none;
 }
@@ -455,7 +455,7 @@ footer.row {
   position: relative;
 }
 .bg-pink {
-  background-color: #df3778;
+  background-color: #C6375D;
   color: #fffefd;
   position: relative;
 }
