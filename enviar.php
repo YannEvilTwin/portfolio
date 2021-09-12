@@ -1,29 +1,23 @@
 <?php
-$remitente = $_POST['email'];
-$destinatario = 'yanina.andregnette@live.com'; // en esta línea va el mail del destinatario.
-$asunto = 'Vi tu portfolio y quiero ponerme en contacto'; // acá se puede modificar el asunto del mail
-if (!$_POST){
-?>
+$nombre = $_POST['nombre'];
+$mail = $_POST['email'];
+$asunto = $_POST['asunto'];
+$empresa = $_POST['mensaje'];
 
-<?php
-}else{
-	 
-    $cuerpo = "Nombre: " . $_POST["nombre"] . "\r\n"; 
-    $cuerpo .= "Correo Electrónico: " . $_POST["email"] . "\r\n";
-    $cuerpo = "Teléfono: " . $_POST["asunto"] . "\r\n";
-	$cuerpo .= "Mensaje: " . $_POST["mensaje"] . "\r\n";
-	//las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
-	// Si se agrega un campo al formulario, hay que agregarlo acá.
+$header = 'From: ' . $mail . " \r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
 
-    $headers  = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/plain; charset=utf-8\n";
-    $headers .= "X-Priority: 3\n";
-    $headers .= "X-MSMail-Priority: Normal\n";
-    $headers .= "X-Mailer: php\n";
-    $headers .= "From: \"".$_POST['nombre']." ".$_POST['email']." ".$_POST['asunto']." ".$_POST['mensaje']."\" <".$remitente.">\n";
+$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+$mensaje .= "Su e-mail es: " . $mail . " \r\n";
+$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
 
-    mail($destinatario, $asunto, $cuerpo, $headers);
-    
-    include 'gracias.html'; //se debe crear un html que confirma el envío
-}
+$para = 'yanina.andregnette@live.com';
+$asunto = 'Mensaje de mi sitio web';
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
+
+header("Location:index.html");
 ?>
