@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* outline:1px solid ;*/
+}
+
+body {
+    background: linear-gradient(rgba(255, 254, 253, 0.651), rgba(255, 254, 253, 0.685)), url("https://images.unsplash.com/photo-1558470570-c9a5a5ade867?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    min-height: 300px;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sobre {
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.30s linear 0s;
+}
+
+.wrapper-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper-2 {
+    text-align: center;
+    margin-top: 20%;
+}
+
+h1 {
+    font-family: 'Unica One', cursive;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #C6375D;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.wrapper-2 p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #394c4a;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.go-home {
+    background-color: #C6375D;
+    padding: 10px 15px;
+    margin: 30px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20%;
+}
+
+.go-home a {
+    font-family: Sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #C6375D;
+
+}
+
+.go-home:hover {
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.go-home a:hover {
+    color: #C6375D;
+    text-decoration: none;
+}
+
+.td-btn {
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.outline {
+    background-color: transparent;
+    border: 1px solid #C6375D;
+    color: #C6375D;
+}
+
+.outline.white {
+    border-color: #C6375D;
+    color: #fffefd;
+}
+
+.outline:focus,
+.outline:hover {
+
+    background-color: #fffefd;
+    color: #C6375D;
+}
+
+
+@media (min-width:360px) {
+    h1 {
+        font-size: 4.5em;
+    }
+
+    .go-home {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:600px) {
+    .thankyoucontent {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .wrapper-1 {
+        height: initial;
+        max-width: 620px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+
+}
