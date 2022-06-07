@@ -368,9 +368,14 @@ footer.row {
 }
 /* Foto de perfil */
 .profile {
-  max-width: 250px;
+  max-width: 300px;
   padding: 0 15px 0 0;
-  margin-top: 6.5%;
+  margin-top: 2.5%;
+  margin-right: 50px;
+}
+
+.text-left {
+  margin-left: -40px;
 }
 
 /* Modal CV */
