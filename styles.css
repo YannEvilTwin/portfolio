@@ -531,6 +531,14 @@ footer.row {
   .md-center { text-align: center; }
 }
 @media (max-width: 991px) {
+
+  .profile {
+  margin-right: 32%;
+  margin-top: 2.5%;
+  }
+  .text-left {
+    margin-left: 20%;
+  }
   /* CV */
   .year {
     text-align: left;
@@ -552,6 +560,19 @@ footer.row {
   
 }
 @media (max-width: 767px) {
+
+  .profile {
+  margin-right: 28%;
+  margin-top: 2.5%;
+  }
+  h4 {
+    text-align: center;
+  }
+  .text-left {
+    margin-right: 50px;
+    margin-left: 0;
+  }
+
   /* Elementos de la página */
   section .row [class^="col-sm-"] + [class^="col-sm-"],
   section .row [class*=" col-sm-"] + [class*=" col-sm-"] {
